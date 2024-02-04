@@ -18,7 +18,8 @@
     "@testing-library/user-event": "^14.5.2",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
