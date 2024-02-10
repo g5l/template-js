@@ -1,8 +1,15 @@
 import * as S from './styles'
 
-const Main = () => (
+const Main = ({
+  title = 'React',
+  description = 'Learning react'
+}: {
+  title: string
+  description: string
+}) => (
   <S.Wrapper>
-    <h1>React</h1>
+    <h1>{title}</h1>
+    <p>{description}</p>
   </S.Wrapper>
 )
 
