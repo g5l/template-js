@@ -1,16 +1,18 @@
-import * as S from './styles'
+import styles from './styles.module.css'
 
 const Main = ({
-  title = 'React',
-  description = 'Learning react'
-}: {
-  title: string
-  description: string
+  title = 'Typescript template',
+  description = 'TypeScript, ReactJS, NextJS e CSS modules'
 }) => (
-  <S.Wrapper>
-    <h1>{title}</h1>
-    <p>{description}</p>
-  </S.Wrapper>
+  <main className={styles.wrapper}>
+    <h1 className={styles.title}>{title}</h1>
+    <h2 className={styles.description}>{description}</h2>
+    <img
+      className={styles.illustration}
+      src="/img/hero-illustration.svg"
+      alt="A developer"
+    />
+  </main>
 )
 
 export default Main

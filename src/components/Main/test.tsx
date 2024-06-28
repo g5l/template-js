@@ -4,10 +4,15 @@ import Main from '.'
 
 describe('<Main />', () => {
   it('should render the heading', () => {
+    // render o component
     const { container } = render(<Main />)
 
-    expect(screen.getByRole('heading', { name: /react/i })).toBeInTheDocument()
+    // Find the element and verify if it exists
+    expect(
+      screen.getByRole('heading', { name: /typescript template/i })
+    ).toBeInTheDocument()
 
+    // Generate snapshot
     expect(container.firstChild).toMatchSnapshot()
   })
 })

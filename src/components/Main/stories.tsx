@@ -5,10 +5,6 @@ import Main from '.'
 export default {
   title: 'Main',
   component: Main,
-  args: {
-    title: 'Learning react',
-    description: 'advanced react'
-  },
   parameters: {
     layout: 'fullscreen'
   }
@@ -18,7 +14,7 @@ export const Default: StoryObj = {}
 
 export const Basic: StoryObj = {
   args: {
-    title: 'Main',
-    description: 'desc'
+    title: 'title basic',
+    description: 'description basic'
   }
 }
